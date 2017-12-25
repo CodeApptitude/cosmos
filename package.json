@@ -1,0 +1,16 @@
+{
+  "name": "cosmos",
+  "version": "1.0.0",
+  "author": "Zainoudine Soulé",
+  "license": "ISC",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "cosmos"
+  },
+  "devDependencies": {
+
+  }
+}
