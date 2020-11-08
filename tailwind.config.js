@@ -1,9 +1,15 @@
 module.exports = {
-    future: {
-        // removeDeprecatedGapUtilities: true,
-        // purgeLayersByDefault: true,
+    experimental: {
+        applyComplexClasses: true,
     },
-    purge: [],
+    future: {
+        removeDeprecatedGapUtilities: true,
+        purgeLayersByDefault: true,
+    },
+    purge: [
+        './*.php',
+        './templates/**/*.php',
+    ],
     theme: {
         extend: {},
     },

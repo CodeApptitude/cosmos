@@ -1,6 +1,12 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
-require('mix-tailwindcss');
 
-mix.sass('./assets/src/theme-style.scss', './assets/css/style.css')
-    .tailwind('./tailwind.config.js');
+
+mix
+    .sass('./assets/src/theme-style.scss', './assets/css/style.css')
+    .options({
+        processCssUrls: false,
+        postCss: [
+            tailwindcss('./tailwind.config.js')
+        ]
+    });
